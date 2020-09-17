@@ -1,1 +1,10 @@
-@import "./vars"
+@import "./vars";
+@import "./logoStyle";
+
+$font-design: 'Montserrat, sans-serif';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
