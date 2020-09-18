@@ -22,12 +22,10 @@
 
 .logo__style-img {
     height: 50vh;
-
 }
 
 .header__logo {
     height: 25%;
-
 }
 
 .header__logo-img {
@@ -37,7 +35,6 @@
 
 .main__title {
     width: 100%;
-    height: auto;
     font-family: Montserrat;
     font-size: 1.9vw;
     font-weight: bold;
@@ -49,7 +46,6 @@
     margin-top: 8vh;
     font-family: Montserrat;
     font-size: 1vw;
-    font-weight: regular;
     color: $font-color;
     line-height: 36px;
     margin-bottom: 30vh;
@@ -69,7 +65,6 @@
         &:hover {
             color: $color-blue;
         }
-
     }
 }
 
@@ -77,7 +72,6 @@
     margin-top: 3vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -85,4 +79,18 @@
     height: 3vh;
     display: block;
     padding-right: 5vw;
+}
+
+.popup-container {
+    width: 30%;
+    background-color: rgba($color: white, $alpha: 0.9);
+    display: none;
+    justify-content: ceneter;
+    align-items: ceneter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 2vh;
 }
