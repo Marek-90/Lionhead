@@ -55,10 +55,34 @@
     margin-bottom: 30vh;
 }
 
-.text__form {
+.text__style {
     width: 90%;
     font-family: Montserrat;
     font-size: 1vw;
     font-weight: bold;
     color: $color-blue;
+
+    a {
+        text-decoration: none;
+        color: $color-blue;
+
+        &:hover {
+            color: $color-blue;
+        }
+
+    }
+}
+
+.footer__style {
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 3vh;
+    display: block;
+    padding-right: 5vw;
 }
