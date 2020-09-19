@@ -1,6 +1,11 @@
+.logo-container {
+    height: 100%;
+    height: 100vh;
+}
+
 .logo__style {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: $custom-gradient;
     display: flex;
     align-items: center;
@@ -10,8 +15,8 @@
     &::before {
         content: "";
         position: absolute;
-        height: 3vh;
-        width: 1.6vw;
+        height: 30px;
+        width: 30px;
         background-color: $color-green;
         border-radius: 50%;
         left: 0;
@@ -22,4 +27,25 @@
 
 .logo__style-img {
     height: 50vh;
+}
+
+@media(max-width: 414px) {
+    .logo-container {
+        background: none;
+        height: 80vh;
+        width: 100%;
+    }
+
+    .logo__style-img {
+        height: 45%;
+        transform: translate(0, -50%);
+    }
+}
+
+@media(max-width: 767px) {
+    .logo__style {
+        &::before {
+            display: none
+        }
+    }
 }

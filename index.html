@@ -11,15 +11,15 @@
 </head>
 
 <body>
-  <div class="row ml-0 mr-0">
-    <div class="col-2 pl-0 pr-0"></div>
-    <div class="col-3 pl-0 pr-0">
+  <div class="row ml-0 mr-0 flex-md-row flex-column-reverse">
+    <div class="col-lg-2 col-md-2 pl-0 pr-0"></div>
+    <div class="col-lg-3 col-md-3 col-0 pl-0 pr-0">
 
-      <header class="header__logo">
+      <header class="header__logo show-on-desktop-only">
         <img src="./assets/logo (1).png" alt="Logo" class="header__logo-img">
       </header>
 
-      <main>
+      <main class="mobile__container">
         <h1 class="main__title">coming<span class="text__green">.soon</span></h1>
         <p class="main__text">
           Już wkrótce <span class="text__blue">turly</span><span class="text__green">.work</span> ułatwi Ci znalezenie
@@ -27,20 +27,21 @@
           <span class="text__blue">Turly</span><span class="text__green">.work</span> to marka stworzona przez
           ekspertów rynku pracy.
         </p>
-
-        <p class="main__text-style">
+        <p class="main__text-style show-on-desktop-only">
           Wypełnij <a href="" class="main__popup">formularz</a> i zgłoś zapotrzebowanie na pracowników
         </p>
       </main>
 
-      <footer class="footer__style">
-        <img src="./assets/prosupport.svg" alt="prosupport-logo" class="footer__logo">
-        <div class="text__style">poland@truly.work</div>
+      <footer class="show-on-desktop-only">
+        <div class="footer__style">
+          <img src="./assets/prosupport.svg" alt="prosupport-logo" class="footer__logo">
+          <div class="footer__text-style">poland@truly.work</div>
+        </div>
       </footer>
 
     </div>
-    <div class="col-7 pl-0 pr-0">
-      <div class="logo__style">
+    <div class="col-lg-7 col-md-7 col-0 pl-0 pr-0 logo-container">
+      <div class="logo-container  logo__style">
         <img src="./assets/coliber.png" alt="Coliber" class="logo__style-img">
       </div>
     </div>
@@ -53,24 +54,29 @@
           <label for="inputEmail4">Email</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>
+
         <div class="form-group col-md-6">
           <label for="inputPassword4">Password</label>
           <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
         </div>
       </div>
+
       <div class="form-group">
         <label for="inputAddress">Address</label>
         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
       </div>
+
       <div class="form-group">
         <label for="inputAddress2">Address 2</label>
         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
       </div>
+
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
+
         <div class="form-group col-md-4">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
@@ -78,11 +84,13 @@
             <option>...</option>
           </select>
         </div>
+
         <div class="form-group col-md-2">
           <label for="inputZip">Zip</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
       </div>
+
       <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -96,6 +104,7 @@
 
   </div>
   <script src="./js/index.js"></script>
+
 </body>
 
 </html>

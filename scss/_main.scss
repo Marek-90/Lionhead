@@ -13,15 +13,19 @@
     font-size: 1vw;
     color: $font-color;
     line-height: 36px;
-    margin-bottom: 30vh;
+    animation-name: show;
+    animation-duration: 3s;
 }
 
 .main__text-style {
     width: 90%;
+    margin-top: 60%;
     font-family: Montserrat;
     font-size: 1vw;
     font-weight: bold;
     color: $color-blue;
+    animation-name: show;
+    animation-duration: 4s;
 
     a {
         text-decoration: none;
@@ -30,5 +34,31 @@
         &:hover {
             color: $color-blue;
         }
+    }
+}
+
+@media(max-width: 414px) {
+    .mobile__container {
+        transform: translate(0, -150%);
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main__title {
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .main__text {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        width: 75%;
     }
 }
