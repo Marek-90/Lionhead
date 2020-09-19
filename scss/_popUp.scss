@@ -17,3 +17,9 @@
     animation-name: show-form;
     animation-duration: 3s;
 }
+
+@media(max-width: 414px) {
+    .popup-container {
+        display: none;
+    }
+}
