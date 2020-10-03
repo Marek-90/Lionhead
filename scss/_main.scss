@@ -19,7 +19,7 @@
 
 .main__text-style {
     width: 90%;
-    margin-top: 60%;
+    margin-top: 25vh;
     font-family: Montserrat;
     font-size: 1vw;
     font-weight: bold;
@@ -38,8 +38,13 @@
 }
 
 @media(max-width: 414px) {
+    .row {
+        height: 100%;
+    }
+
     .mobile__container {
         transform: translate(0, -150%);
+        margin-top: 10vh;
         height: 30vh;
         width: 100vw;
         display: flex;
